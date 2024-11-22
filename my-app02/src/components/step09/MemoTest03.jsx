@@ -18,6 +18,7 @@ function MemoTest03(props) {
   
   //hardNumner 값이 변경 될 때만 실행
   const hardSum = useMemo(()=>{
+    alert("hardSum");
     return hardCalcu(hardNumber);
   },[hardNumber]);
   const easySum = easyCalcu(easyNumber);

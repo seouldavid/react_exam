@@ -1,13 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 function MemoTest04(props) {
   const [number,setNumber] =useState(0);
   const [isKorea,setIsKorea] = useState(true);
 
   //객체 : 렌더링 되면서 객체가 생성되고 생성된 객체의 주소가 변경되서 저장된다.
-  const location ={ country :isKorea ? '한국' : '외국'};
+  const location =useMemo(()=>{
+    alert("location")
+    return {
+      country :isKorea ? '한국' : '외국'
+    };
+},[isKorea]); 
   // const location = isKorea ? '한국' : '외국';
   useEffect(()=> {
+    alert("useEffect")
     console.log('useEffect 호출')
   },[location]);
 
