@@ -23,6 +23,12 @@ import MemoTest03 from './components/step09/MemoTest03';
 import MemoTest04 from './components/step09/MemoTest04';
 import CallBackTest01 from './components/step10/CallBackTest01';
 import CallBackTest02 from './components/step10/CallBackTest02';
+import RefTest01 from './components/step11/RefTest01';
+import RefTest02 from './components/step11/RefTest02';
+import RefTest03 from './components/step11/RefTest03';
+import RefTest04 from './components/step11/RefTest04';
+import RefTest05 from './components/step11/RefTest05';
+import UseIdTest from './components/step12/UseIdTest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -44,9 +50,15 @@ root.render(
     {/* <MemoTest01/> */}
     {/* <MemoTest02/> */}
     {/* <MemoTest03/> */}
-    <MemoTest04/>
+    {/* <MemoTest04/> */}
     {/* <CallBackTest01/> */}
     {/* <CallBackTest02/> */}
+    {/* <RefTest01/> */}
+    {/* <RefTest02/> */}
+    {/* <RefTest03/> */}
+    {/* <RefTest04/> */}
+    {/* <RefTest05/> */}
+    <UseIdTest/>
   </React.StrictMode>
 );
 
