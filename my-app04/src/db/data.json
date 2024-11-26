@@ -49,6 +49,13 @@
       "eng": "house",
       "kor": "집",
       "isDone": false
+    },
+    {
+      "id": "7541",
+      "day": "2",
+      "eng": "sleep",
+      "kor": "자다",
+      "isDone": false
     }
   ]
 }
