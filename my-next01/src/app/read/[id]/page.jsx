@@ -5,7 +5,8 @@ import React from 'react';
 
 //동적쿼리는
 async function page(props) {
-  const msg = await props.params.id;
+  const temp = await props.params;
+ let msg =temp.id;
   let str = "";
   if (msg === '1') {
     str = "HTML 선택";

@@ -3,7 +3,7 @@
 //layout 이 필요없는 간단한 페이지에서는 생략 가능
 
 import Link from "next/link";
-
+import './globals.css'
 // 페이지 전체의 공통구조를 렌더링 할때 사용
 
 // 부모 컴포넌트
@@ -21,12 +21,11 @@ export default function RootLayout({ children }) {
           <li><Link href="/read/2">CSS</Link></li>
           <li><Link href="/read/3">JS</Link></li>
           <li><Link href="/gallery">image</Link></li>
-          <li>ItemList(외부 서버)</li>
-          <li>Guestbook(spring 서버)</li>
+          <li><Link href="/itemList">ItemList(외부 서버)</Link></li>
+          <li><Link href="/guestBookList">Guestbook(spring 서버)</Link></li>
         </ol>
         <hr/>
         {children}
-        
         <hr/>
         <ul>
           {/* /create 이면 create 폴더를 찾는다. 
